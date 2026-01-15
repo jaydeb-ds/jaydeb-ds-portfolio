@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
-/* :root{
+:root{
 	--bg:#172335;
 	--card:#0b1220;
 	--muted:#94a3b8;
@@ -10,7 +10,7 @@
 	--maxw:1100px;
 	--gap:24px;
 	font-synthesis: none;
-} */
+}
 
 * {
   margin: 0;
@@ -42,7 +42,7 @@ body {
   align-items: center;
   justify-content: space-between;
   box-shadow: 2px 2px 15px rgb(131, 23, 164), -2px -2px 15px rgb(131, 23, 164);
-  position: relative;  	
+  /* position: relative;  	 */
   transition: all ease-in 0.3s;
 
 
@@ -133,5 +133,32 @@ body {
 		background-color: rgb(217, 218, 220);
 		}
 	}
+}
 
+/* ________________________________main_____________________________ */
+
+.details{
+	color: white;
+	/* background: red; */
+}
+.left-main{
+	width: 50vw;
+	height: 80vh;
+	display: flex;
+	justify-content:center;
+	align-items: center;
+}
+.line1{
+	font-size: 35px;
+}
+
+.line1 span{
+	color: #f1e836;
+	font-weight: 500;
+	font-size: 38px;
+}
+.line2{
+	color:#a859f8;
+	font-weight: 500;
+	font-size: 35px;
 }
