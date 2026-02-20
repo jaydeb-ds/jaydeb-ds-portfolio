@@ -1,15 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
-:root{
-	--bg:#172335;
-	--card:#0b1220;
-	--muted:#94a3b8;
-	--accent:#7c3aed;
-	--glass: rgba(255,255,255,0.04);
-	--radius:12px;
-	--maxw:1100px;
-	--gap:24px;
-	font-synthesis: none;
+:root {
+  --bg: #172335;
+  --card: #0b1220;
+  --muted: #94a3b8;
+  --accent: #7c3aed;
+  --glass: rgba(255, 255, 255, 0.04);
+  --radius: 12px;
+  --maxw: 1100px;
+  --gap: 24px;
+  font-synthesis: none;
 }
 
 * {
@@ -41,11 +41,11 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  box-shadow: 2px 2px 15px rgb(131, 23, 164), -2px -2px 15px rgb(131, 23, 164);
+  box-shadow:
+    1px 1px 10px rgb(131, 23, 164),
+    -1px -1px 10px rgb(131, 23, 164);
   /* position: relative;  	 */
   transition: all ease-in 0.3s;
-
-
 }
 
 .left-nav {
@@ -63,16 +63,17 @@ body {
 
 .right-nav a {
   text-decoration: none;
+  font-size: larger;
   font-weight: 500;
   color: rgb(66, 11, 83);
   /* transition: all ease-in 0.5s; */
   &:hover {
     font-weight: 600;
-	transform: scale(1.1);
+    transform: scale(1.1);
     /* text-decoration: underline; */
   }
-  &:active{
-	transform: scale(0.95);
+  &:active {
+    transform: scale(0.95);
   }
 }
 
@@ -92,8 +93,7 @@ body {
   #hambarger {
     display: block;
     margin-right: 20px;
-  	transition: all ease-in 0.15s;
-
+    transition: all ease-in 0.15s;
 
     &:hover {
       transform: scale(1.2);
@@ -106,59 +106,184 @@ body {
     height: 280px;
     display: block;
     padding-top: 20px;
-
   }
 
   .active_nav_list {
-	margin-top: 15px;
+    margin-top: 15px;
     display: flex;
     flex-direction: column;
-	align-items: center;
+    align-items: center;
     gap: 12px;
     height: 100%;
     width: 100%;
-  	transition: all ease-in 0.5s;
-
+    transition: all ease-in 0.5s;
   }
-  .nav_list{
-	/* border: 1px solid black; */
-	border-radius: 10px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	padding: 2px;
-	width: 80%;
-	box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.722);
-	&:hover{
-		background-color: rgb(217, 218, 220);
-		}
-	}
+  .nav_list {
+    /* border: 1px solid black; */
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2px;
+    width: 80%;
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.722);
+    &:hover {
+      background-color: rgb(217, 218, 220);
+    }
+  }
 }
 
 /* ________________________________main_____________________________ */
 
-.details{
-	color: white;
-	/* background: red; */
+main {
+  display: flex;
 }
-.left-main{
-	width: 50vw;
-	height: 80vh;
-	display: flex;
-	justify-content:center;
-	align-items: center;
+@media (width < 700px) {
+  main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
+    flex-direction: column-reverse;
+  }
+  .left-main .right_main {
+    width: 100%;
+  }
+
+.image_div {
+  height: 200px;
+  width: 200px;
+  overflow: hidden;
+  border-radius: 50%;
+  background-color: #174a93;
 }
-.line1{
-	font-size: 35px;
+    #profile_pic {
+      height: 10px;
+    }
+}
+.details {
+  color: white;
+  /* background: red; */
+}
+.left-main {
+  width: 50%;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.line1 {
+  font-size: 35px;
 }
 
-.line1 span{
-	color: #f1e836;
-	font-weight: 500;
-	font-size: 38px;
+.line1 span {
+  color: #f1e836;
+  font-weight: 500;
+  font-size: 38px;
 }
-.line2{
-	color:#a859f8;
-	font-weight: 500;
-	font-size: 35px;
+.line2 {
+  color: #a859f8;
+  font-weight: 500;
+  font-size: 35px;
+}
+
+/*------------------------------------From Uiverse.io by vinodjangid07--------------------*/
+.Download-button {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 17px;
+  padding: 12px 20px;
+  color: white;
+  background: rgb(225, 125, 3);
+  border: none;
+  box-shadow: 0 0.3em 1.2em -0.5em rgba(237, 213, 157, 0.964);
+  letter-spacing: 0.05em;
+  border-radius: 8px;
+  cursor: pointer;
+  /* position: relative; */
+}
+
+.Download-button svg {
+  margin-right: 8px;
+  width: 25px;
+}
+
+.Download-button:hover {
+  box-shadow: 0 0.5em 1.5em -0.5emrgb (225, 125, 3);
+}
+
+.Download-button:active {
+  box-shadow: 0 0.3em 1em -0.5em rgb(225, 125, 3);
+  transform: scale(0.96);
+}
+
+.Download-button::before {
+  content: "";
+  width: 4px;
+  height: 40%;
+  background-color: white;
+  position: absolute;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  left: 0;
+  transition: all 0.2s;
+}
+
+.Download-button::after {
+  content: "";
+  width: 4px;
+  height: 40%;
+  background-color: white;
+  position: absolute;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  right: 0;
+  transition: all 0.2s;
+}
+
+.Download-button:hover::before,
+.Download-button:hover::after {
+  height: 70%;
+}
+
+/* ----------------------------------------------------------------------------------------------------- */
+
+.right_main {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image_div {
+  border: 2px solid yellow;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 300px;
+  width: 300px;
+  overflow: hidden;
+  border-radius: 50%;
+  background-color: #94a3b8;
+}
+
+#profile_pic {
+  height: 340px;
+}
+
+@media (width < 700px) {
+  
+  .left-main{
+    width: 100%;
+    display: flex;  
+    align-items: flex-start;
+
+  }
+  .right_main{
+    width: 100%;
+  }
+  
 }
