@@ -12,3 +12,10 @@ ham.addEventListener('click',()=>{
 		ham.src = "hambarger.svg"
 	}
 })
+
+   var typed = new Typed('#profession', {
+      strings: ['Web Developer', 'MERN Developer', 'Problem Solver', 'Student'],
+      typeSpeed: 50,
+	  backSpeed: 50,
+	  loop: true
+    });

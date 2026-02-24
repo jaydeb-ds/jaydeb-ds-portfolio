@@ -25,7 +25,7 @@ body {
 
 #home {
   width: 100vw;
-  height: 100vw;
+  /* height: 100vw; */
 }
 
 /* ________________________________---------Navbar----------________________________________________*/
@@ -46,6 +46,7 @@ body {
     -1px -1px 10px rgb(131, 23, 164);
   /* position: relative;  	 */
   transition: all ease-in 0.3s;
+  z-index: 2;
 }
 
 .left-nav {
@@ -150,16 +151,16 @@ main {
     width: 100%;
   }
 
-.image_div {
-  height: 200px;
-  width: 200px;
-  overflow: hidden;
-  border-radius: 50%;
-  background-color: #174a93;
-}
-    #profile_pic {
-      height: 10px;
-    }
+  .image_div {
+    height: 200px;
+    width: 200px;
+    overflow: hidden;
+    border-radius: 50%;
+    background-color: #174a93;
+  }
+  #profile_pic {
+    height: 10px;
+  }
 }
 .details {
   color: white;
@@ -182,12 +183,20 @@ main {
   font-size: 38px;
 }
 .line2 {
-  color: #a859f8;
+  color: #9ee4f7;
   font-weight: 500;
   font-size: 35px;
+  text-shadow: 1px 1px 5px rgb(11, 180, 107);
+}
+.line3 {
+  margin-top: 10px;
+  font-style: italic;
+  font-weight: 200;
+  font-family: serif;
 }
 
-/*------------------------------------From Uiverse.io by vinodjangid07--------------------*/
+/*----------------------------Download button--------------------*/
+
 .Download-button {
   margin-top: 20px;
   display: flex;
@@ -197,13 +206,20 @@ main {
   font-size: 17px;
   padding: 12px 20px;
   color: white;
-  background: rgb(225, 125, 3);
+  background: linear-gradient(144deg, #fff940, rgb(225, 125, 3) 50%, #b8285f);
   border: none;
   box-shadow: 0 0.3em 1.2em -0.5em rgba(237, 213, 157, 0.964);
   letter-spacing: 0.05em;
   border-radius: 8px;
   cursor: pointer;
-  /* position: relative; */
+  position: relative;
+
+  &:hover {
+    transform: scale(1.01);
+  }
+  &:active {
+    transform: scale(0.97);
+  }
 }
 
 .Download-button svg {
@@ -212,12 +228,11 @@ main {
 }
 
 .Download-button:hover {
-  box-shadow: 0 0.5em 1.5em -0.5emrgb (225, 125, 3);
+  box-shadow: 0 0.5em 1.5em -0.5em rgba(88, 71, 116, 0.627);
 }
 
 .Download-button:active {
-  box-shadow: 0 0.3em 1em -0.5em rgb(225, 125, 3);
-  transform: scale(0.96);
+  box-shadow: 0 0.3em 1em -0.5em rgba(88, 71, 116, 0.627);
 }
 
 .Download-button::before {
@@ -238,6 +253,7 @@ main {
   height: 40%;
   background-color: white;
   position: absolute;
+  z-index: 1;
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
   right: 0;
@@ -246,7 +262,7 @@ main {
 
 .Download-button:hover::before,
 .Download-button:hover::after {
-  height: 70%;
+  height: 60%;
 }
 
 /* ----------------------------------------------------------------------------------------------------- */
@@ -275,15 +291,70 @@ main {
 }
 
 @media (width < 700px) {
-  
-  .left-main{
+  .left-main {
     width: 100%;
-    display: flex;  
+    display: flex;
     align-items: flex-start;
-
   }
-  .right_main{
+  .right_main {
     width: 100%;
   }
-  
+}
+
+/* -----------------------------------------------
+_______________________about______________________ 
+---------------------------------------------------*/
+
+#about {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.about_heading {
+  margin-bottom: 4rem;
+  color: #f5e8d8;
+  font-size: 40px;
+}
+.about_heading span {
+  color: #ff6f61;
+}
+.about_desc {
+  margin-bottom: 10rem;
+}
+.about_lines {
+  display: flex;
+  font-size: large;
+}
+.about_line1 {
+  border: 1px solid white;
+  width: 180px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  color: #ff3b86;
+}
+.about_line2 {
+  border: 1px solid white;
+  width: 400px;
+  padding: 10px;
+  display: flex;
+}
+
+@media (width < 600px) { 
+  .about_heading {
+    font-size: 30px;
+  }
+  .about_line1 {
+    width: 85px;
+    padding: 7px;
+    font-size: small;
+  }
+  .about_line2 {
+    padding: 7px;
+    font-size: small;
+    width: 240px;
+  }
 }
