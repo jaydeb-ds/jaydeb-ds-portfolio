@@ -147,9 +147,9 @@ main {
     margin-top: 200px;
     flex-direction: column-reverse;
   }
-  .left-main .right_main {
+  /* .left-main .right_main {
     width: 100%;
-  }
+  } */
 
   .image_div {
     height: 200px;
@@ -295,6 +295,9 @@ main {
     width: 100%;
     display: flex;
     align-items: flex-start;
+    margin-top: 40px;
+    height: 300px;
+
   }
   .right_main {
     width: 100%;
@@ -317,28 +320,36 @@ _______________________about______________________
   margin-bottom: 4rem;
   color: #f5e8d8;
   font-size: 40px;
+  font-weight: 500;
 }
 .about_heading span {
   color: #ff6f61;
 }
 .about_desc {
   margin-bottom: 10rem;
+  border: 3px solid white;
+  border-radius: 20px;
 }
 .about_lines {
   display: flex;
   font-size: large;
+  border-top: 3px solid white;
+}
+.first-line{
+  border-top: 3px solid transparent;
+  
+
 }
 .about_line1 {
-  border: 1px solid white;
   width: 180px;
   padding: 10px;
   display: flex;
   justify-content: space-between;
   color: #ff3b86;
+  border-right: 3px solid white;
 }
 .about_line2 {
-  border: 1px solid white;
-  width: 400px;
+  width: 500px;
   padding: 10px;
   display: flex;
 }
@@ -358,3 +369,55 @@ _______________________about______________________
     width: 240px;
   }
 }
+
+/* --------------------------------------skill------------------------------------ */
+#skill{
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.skill_heading{
+  font-weight: 600;
+  font-size: 35px;
+  margin-bottom: 4rem;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+.skill_heading span {
+  color: greenyellow;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight: 500;
+}
+
+.skill{
+  /* background: rgb(184, 162, 162); */
+  width: 80vw;
+  display: flex;
+  flex-wrap:wrap;
+}
+
+.skill_text{
+  /* background:red; */
+  width: 100%;
+  text-align: left;
+}
+
+.skill-img{
+    margin: 3rem;
+    height: 150px;
+    transition: all 0.2s ease-in;
+    &:hover {
+        transform: scale(1.2);
+    }
+}
+
+/* @media(width <600px) {
+    .skill-img img {
+        height: 60px;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+} */
