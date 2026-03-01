@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
@@ -94,41 +100,94 @@
     <section id="skill">
       <div class="skill_heading">My<span> Skills</span></div>
       <div class="skill">
-      <h1 class="skill_text">language :</h1> 
+        <h1 class="skill_text">Programing Language :</h1>
         <img src="skill/c.png" alt="c" class="skill-img" />
         <img src="skill/cpp.png" alt="cpp" class="skill-img" />
         <img src="skill/js.png" alt="js" class="skill-img" />
         <img src="skill/python.png" alt="python" class="skill-img" />
-
       </div>
-      
+
       <div class="skill">
-      <h1 class="skill_text">Web Technologies :</h1> 
+        <h1 class="skill_text">Web Technologies :</h1>
         <img src="skill/html.png" alt="html" class="skill-img" />
         <img src="skill/css.png" alt="css" class="skill-img" />
+        <img src="skill/bootsrap.png" alt="bootstrap" class="skill-img" />
 
         <img src="skill/nodejs.png" alt="nodejs" class="skill-img" />
-        <!-- <img src="skill/mongo2.png" alt="mongoDB" class="skill-img" /> -->
+        <img src="skill/express.png" alt="express" class="skill-img" />
 
         <img src="skill/react1.png" alt="react" class="skill-img" />
-        <img src="skill/express.png" alt="express" class="skill-img" />
-        <img src="skill/bootsrap.png" alt="bootstrap" class="skill-img" />
         <img src="skill/tailwindcss.png" alt="tailwind_css" class="skill-img" />
-
       </div>
 
       <div class="skill">
-      <h1 class="skill_text">Database :</h1> 
-       
+        <h1 class="skill_text">Database :</h1>
+
         <img src="skill/mongodb.png" alt="mongoDB" class="skill-img" />
         <img src="skill/mysql.png" alt="mysql" class="skill-img" />
         <img src="skill/oracle.png" alt="oracle" class="skill-img" />
+      </div>
+    </section>
+      <!-- projects -->
+    
+      <div class="container mt-5">
 
+  <div id="myCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
 
+    <!-- Indicators (Dots at Bottom) -->
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2"></button>
+    </div>
+
+    <!-- Slides -->
+    <div class="carousel-inner">
+
+      <div class="carousel-item active">
+        <img src="https://picsum.photos/800/400?1" class="d-block w-100" alt="Slide 1">
+        <div class="carousel-caption">
+          <button class="btn btn-primary">Learn More</button>
+        </div>
       </div>
 
-    </section>
+      <div class="carousel-item">
+        <img src="https://picsum.photos/800/400?2" class="d-block w-100" alt="Slide 2">
+        <div class="carousel-caption">
+          <button class="btn btn-success">Explore</button>
+        </div>
+      </div>
 
+      <div class="carousel-item">
+        <img src="https://picsum.photos/800/400?3" class="d-block w-100" alt="Slide 3">
+        <div class="carousel-caption">
+          <button class="btn btn-danger">Get Started</button>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Previous Button -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+
+    <!-- Next Button -->
+    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+
+  </div>
+
+</div>
+
+
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
     <script src="https://unpkg.com/typed.js@3.0.0/dist/typed.umd.js"></script>
     <script src="script.js"></script>
   </body>
