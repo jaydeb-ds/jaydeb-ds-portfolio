@@ -13,12 +13,22 @@ ham.addEventListener('click',()=>{
 	}
 })
 
+//--------------------typing animation.......----------------------
    var typed = new Typed('#profession', {
       strings: ['Web Developer', 'MERN Developer', 'Problem Solver', 'Student'],
       typeSpeed: 50,
 	  backSpeed: 50,
 	  loop: true
     });
+
+// -----------------download resume-----------------------------
+function downloadResume(){
+    const link = document.createElement("a");
+    link.href = "resume.pdf";  // your pdf file name
+    link.download = "jaydebResume.pdf";
+    link.click();
+}
+
 
 
 	// _______project________
