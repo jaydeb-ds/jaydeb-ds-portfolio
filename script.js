@@ -77,3 +77,30 @@ function downloadResume(){
     }, 15000); // change slide every 3 seconds
 });
 
+// ----------------------------------------------
+// -------------------------Gsap---------------
+let tl = gsap.timeline();
+
+// tl.from(".navbar",{
+//     y:-200,
+//     opacity:0,
+//     duration:1
+// })
+
+
+gsap.from(".right_main",{
+    x:200,
+    opacity:0,
+    duration:1
+})
+
+tl.from(".left-main",{
+    x:-300,
+    opacity:0,
+    duration:1,
+})
+tl.from(".Download-button",{
+    y:100,
+    opacity :0,
+    duration:0.5
+})
