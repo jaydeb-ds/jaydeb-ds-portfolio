@@ -6,9 +6,9 @@ ham.addEventListener("click", () => {
   navlist.classList.toggle("active_nav_list");
 
   if (nav.classList.contains("active-nav")) {
-    ham.src = "cross.svg";
+    ham.src = "svg/cross.svg";
   } else {
-    ham.src = "hambarger.svg";
+    ham.src = "svg/hambarger.svg";
   }
 });
 
@@ -23,7 +23,7 @@ var typed = new Typed("#profession", {
 // -----------------download resume-----------------------------
 function downloadResume() {
   const link = document.createElement("a");
-  link.href = "resume.pdf"; // your pdf file name
+  link.href = "resume/resume.pdf"; // your pdf file name
   link.download = "jaydebResume.pdf";
   link.click();
 }
@@ -108,7 +108,7 @@ t2.from(".about_heading", {
     scroller: "body",
     // markers:true,
     start: "top 80%",
-    end: "top 40%",
+    end: "top 50%",
     scrub: 2,
   },
 });
@@ -123,7 +123,7 @@ t2.from(".about_desc", {
     scroller: "body",
     // markers:true,
     start: "top 80%",
-    end: "top 60%",
+    end: "top 70%",
     scrub: 2,
   },
 });
@@ -138,7 +138,7 @@ t2.from(".about_line1", {
     scroller: "body",
     // markers:true,
     start: "top 80%",
-    end: "top 50%",
+    end: "top 60%",
     scrub: 2,
   },
 });
@@ -153,7 +153,7 @@ t2.from(".about_line2", {
     scroller: "body",
     // markers:true,
     start: "top 80%",
-    end: "top 50%",
+    end: "top 60%",
     scrub: 2,
   },
 });
@@ -256,7 +256,7 @@ t5.from(".contact-div", {
     scroller: "body",
     // markers:true,
     start: "top 70%",
-    end: "top 40%",
+    end: "top 50%",
     scrub: 2,
   },
 
@@ -270,8 +270,8 @@ t5.from(".contact-form", {
     trigger: ".contact-form",
     scroller: "body",
     // markers:true,
-    start: "top 60%",
-    end: "top 30%",
+    start: "top 70%",
+    end: "top 50%",
     scrub: 2,
   },
 });
@@ -284,9 +284,9 @@ t5.from(".icons", {
     scrollTrigger: {
     trigger: ".icons",
     scroller: "body",
-    markers:true,
+    // markers:true,
     start: "top 95%",
-    end: "top 85%",
+    end: "top 90%",
     scrub: 2,
   },
 });
