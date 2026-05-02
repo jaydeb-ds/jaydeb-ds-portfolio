@@ -159,135 +159,135 @@ gsap.from(".about_desc", {
 // });
 
 // ---------------------------
-let t3 = gsap.timeline();
+// let t3 = gsap.timeline();
 
-t3.from(".skill_heading", {
-  y: 100,
-  opacity: 0,
-  duration: 0.5,
-  scrollTrigger: {
-    trigger: ".skill_heading",
-    scroller: "body",
-    // markers:true,
-    start: "top 90%",
-    end: "top 60%",
-    scrub: 2,
-  },
-});
+// t3.from(".skill_heading", {
+//   y: 100,
+//   opacity: 0,
+//   duration: 0.5,
+//   scrollTrigger: {
+//     trigger: ".skill_heading",
+//     scroller: "body",
+//     // markers:true,
+//     start: "top 90%",
+//     end: "top 60%",
+//     scrub: 2,
+//   },
+// });
 
-t3.from(".skill", {
-  x: 400,
-  opacity: 0,
-  duration: 1,
-  stagger: 1,
-  scrollTrigger: {
-    trigger: ".skill",
-    scroller: "body",
-    // markers:true,
-    start: "top 90%",
-    end: "top 80%",
-    scrub: 4,
-  },
-});
+// t3.from(".skill", {
+//   x: 400,
+//   opacity: 0,
+//   duration: 1,
+//   stagger: 1,
+//   scrollTrigger: {
+//     trigger: ".skill",
+//     scroller: "body",
+//     // markers:true,
+//     start: "top 90%",
+//     end: "top 80%",
+//     scrub: 4,
+//   },
+// });
 
-let t4 = gsap.timeline();
+// let t4 = gsap.timeline();
 
-t4.from(".project_heading", {
-  y: 200,
-  opacity: 0,
-  duration: 1,
-  scrollTrigger: {
-    trigger: ".project_heading",
-    scroller: "body",
-    // markers: true,
-    start: "top 90%",
-    end: "top 70%",
-    scrub: 3,
-  },
-});
+// t4.from(".project_heading", {
+//   y: 200,
+//   opacity: 0,
+//   duration: 1,
+//   scrollTrigger: {
+//     trigger: ".project_heading",
+//     scroller: "body",
+//     // markers: true,
+//     start: "top 90%",
+//     end: "top 70%",
+//     scrub: 3,
+//   },
+// });
 
-let p1 = gsap.utils.toArray(".p1");
+// let p1 = gsap.utils.toArray(".p1");
 
-p1.forEach((p) => {
-  gsap.from(p, {
-    x: -200,
-    opacity: 0,
-    duration: 1,
-    stagger: 1,
-    scrollTrigger: {
-      trigger: p,
-      scroller: "body",
-    //   markers: true,
-      start: "top 80%",
-      end: "top 50%",
-      scrub: 3,
-    },
-  });
-});
+// p1.forEach((p) => {
+//   gsap.from(p, {
+//     x: -200,
+//     opacity: 0,
+//     duration: 1,
+//     stagger: 1,
+//     scrollTrigger: {
+//       trigger: p,
+//       scroller: "body",
+//     //   markers: true,
+//       start: "top 80%",
+//       end: "top 50%",
+//       scrub: 3,
+//     },
+//   });
+// });
 
-let p2 = gsap.utils.toArray(".p2")
+// let p2 = gsap.utils.toArray(".p2")
 
-p2.forEach((p) => {
-  gsap.from(p, {
-    x: 200,
-    opacity: 0,
-    duration: 1,
-    stagger: 1,
-    scrollTrigger: {
-      trigger: p,
-      scroller: "body",
-    //   markers: true,
-      start: "top 90%",
-      end: "top 70%",
-      scrub: 3,
-    },
-  });
-});
+// p2.forEach((p) => {
+//   gsap.from(p, {
+//     x: 200,
+//     opacity: 0,
+//     duration: 1,
+//     stagger: 1,
+//     scrollTrigger: {
+//       trigger: p,
+//       scroller: "body",
+//     //   markers: true,
+//       start: "top 90%",
+//       end: "top 70%",
+//       scrub: 3,
+//     },
+//   });
+// });
 
 
 
-let t5 = gsap.timeline();
+// let t5 = gsap.timeline();
 
-t5.from(".contact-div", {
-  y: 100,
-  opacity: 0,
-  duration: 1,
-    scrollTrigger: {
-    trigger: ".contact-div",
-    scroller: "body",
-    // markers:true,
-    start: "top 90%",
-    end: "top 60%",
-    scrub: 2,
-  },
+// t5.from(".contact-div", {
+//   y: 100,
+//   opacity: 0,
+//   duration: 1,
+//     scrollTrigger: {
+//     trigger: ".contact-div",
+//     scroller: "body",
+//     // markers:true,
+//     start: "top 90%",
+//     end: "top 60%",
+//     scrub: 2,
+//   },
 
-});
+// });
 
-t5.from(".contact-form", {
-  x: -300,
-  opacity: 0,
-  duration: 1,
-    scrollTrigger: {
-    trigger: ".contact-form",
-    scroller: "body",
-    // markers:true,
-    start: "top 90%",
-    end: "top 70%",
-    scrub: 2,
-  },
-});
+// t5.from(".contact-form", {
+//   x: -300,
+//   opacity: 0,
+//   duration: 1,
+//     scrollTrigger: {
+//     trigger: ".contact-form",
+//     scroller: "body",
+//     // markers:true,
+//     start: "top 90%",
+//     end: "top 70%",
+//     scrub: 2,
+//   },
+// });
 
-t5.from(".icons", {
-  x: 300,
-  opacity: 0,
-  duration: 0.3,
-  stagger: 1,
-    scrollTrigger: {
-    trigger: ".icons",
-    scroller: "body",
-    // markers:true,
-    start: "top 95%",
-    end: "top 90%",
-    scrub: 2,
-  },
-});
+// t5.from(".icons", {
+//   x: 300,
+//   opacity: 0,
+//   duration: 0.3,
+//   stagger: 1,
+//     scrollTrigger: {
+//     trigger: ".icons",
+//     scroller: "body",
+//     // markers:true,
+//     start: "top 95%",
+//     end: "top 90%",
+//     scrub: 2,
+//   },
+// });
