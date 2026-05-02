@@ -98,66 +98,67 @@ tl.from(".Download-button", {
 
 let t2 = gsap.timeline();
 
-t2.from(".about_heading", {
+// gsap.from(".about_heading", {
+//   y: 100,
+//   opacity: 0,
+//   duration: 0.5,
+
+//   scrollTrigger: {
+//     trigger: ".about_heading",
+//     scroller: "body",
+//     // markers:true,
+//     start: "top 95%",
+//     end: "top 100%",
+//     scrub: 2,
+//   },
+// });
+
+gsap.from(".about_desc", {
   y: 100,
   opacity: 0,
   duration: 1,
 
   scrollTrigger: {
-    trigger: ".about_heading",
-    scroller: "body",
+   trigger: ".about_desc",
+   scroller: "100%",
     // markers:true,
-    start: "top 80%",
-    end: "top 50%",
+    start: "top 95%",
+    end: "top 100%",
     scrub: 2,
   },
 });
 
-t2.from(".about_desc", {
-  y: 100,
-  opacity: 0,
-  duration: 0.5,
+// gsap.from(".about_line1", {
+//   x: -150,
+//   opacity: 0,
+//   duration: 0.5,
+//   // stagger:1
+//   scrollTrigger: {
+//     trigger: ".about_line1",
+//     scroller: "body",
+//     markers:true,
+//     start: "top 95%",
+//     end: "top 100%",
+//     scrub: 2,
+//   },
+// });
 
-  scrollTrigger: {
-    trigger: ".about_desc",
-    scroller: "body",
-    // markers:true,
-    start: "top 80%",
-    end: "top 70%",
-    scrub: 2,
-  },
-});
+// gsap.from(".about_line2", {
+//   x: 150,
+//   opacity: 0,
+//   duration: 0.5,
+//   // stagger:1
+//   scrollTrigger: {
+//     trigger: ".about_line",
+//     scroller: "body",
+//     markers:true,
+//     start: "top 95%",
+//     end: "top 80%", 
+//     scrub: 2,
+//   },
+// });
 
-t2.from(".about_line1", {
-  x: -150,
-  opacity: 0,
-  duration: 0.5,
-  // stagger:1
-  scrollTrigger: {
-    trigger: ".about_line1",
-    scroller: "body",
-    // markers:true,
-    start: "top 80%",
-    end: "top 60%",
-    scrub: 2,
-  },
-});
-
-t2.from(".about_line2", {
-  x: 150,
-  opacity: 0,
-  duration: 0.5,
-  // stagger:1
-  scrollTrigger: {
-    trigger: ".about_line1",
-    scroller: "body",
-    // markers:true,
-    start: "top 80%",
-    end: "top 60%",
-    scrub: 2,
-  },
-});
-
+// ---------------------------
 let t3 = gsap.timeline();
 
 t3.from(".skill_heading", {
@@ -168,8 +169,8 @@ t3.from(".skill_heading", {
     trigger: ".skill_heading",
     scroller: "body",
     // markers:true,
-    start: "top 80%",
-    end: "top 40%",
+    start: "top 90%",
+    end: "top 60%",
     scrub: 2,
   },
 });
@@ -183,8 +184,8 @@ t3.from(".skill", {
     trigger: ".skill",
     scroller: "body",
     // markers:true,
-    start: "top 80%",
-    end: "top 50%",
+    start: "top 90%",
+    end: "top 80%",
     scrub: 4,
   },
 });
@@ -199,8 +200,8 @@ t4.from(".project_heading", {
     trigger: ".project_heading",
     scroller: "body",
     // markers: true,
-    start: "top 80%",
-    end: "top 50%",
+    start: "top 90%",
+    end: "top 70%",
     scrub: 3,
   },
 });
@@ -236,8 +237,8 @@ p2.forEach((p) => {
       trigger: p,
       scroller: "body",
     //   markers: true,
-      start: "top 80%",
-      end: "top 50%",
+      start: "top 90%",
+      end: "top 70%",
       scrub: 3,
     },
   });
@@ -255,8 +256,8 @@ t5.from(".contact-div", {
     trigger: ".contact-div",
     scroller: "body",
     // markers:true,
-    start: "top 70%",
-    end: "top 50%",
+    start: "top 90%",
+    end: "top 60%",
     scrub: 2,
   },
 
@@ -270,8 +271,8 @@ t5.from(".contact-form", {
     trigger: ".contact-form",
     scroller: "body",
     // markers:true,
-    start: "top 70%",
-    end: "top 50%",
+    start: "top 90%",
+    end: "top 70%",
     scrub: 2,
   },
 });
